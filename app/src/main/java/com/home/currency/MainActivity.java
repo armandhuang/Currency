@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             new AlertDialog.Builder(this).setTitle("Problem").setMessage("Please enter your NTD amount").setPositiveButton("OK", null).show();
         else {
             float ntd = Float.parseFloat(tmpntd);
-//            Log.d("MainActivity", "NTD input : " + ntd);
+            Log.d("MainActivity", "NTD input : " + ntd);
             float us = ntd / 30.9f;
             float jp = ntd / 0.27f;
 //            Log.d("MainActivity", "US = " + us);
