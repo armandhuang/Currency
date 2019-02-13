@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
             Log.d("MainActivity", "NTD input : " + ntd);
             float us = ntd / 30.9f;
             float jp = ntd / 0.27f;
-//            Log.d("MainActivity", "US = " + us);
-//            Log.d("Mainactivity", "JP = " + jp);
+            Log.d("MainActivity", "US = " + us);
+            Log.d("Mainactivity", "JP = " + jp);
             resultUs.setText("" + us);
             resultJp.setText("" + jp);
             new AlertDialog.Builder(this).setTitle("Currency").setMessage("US：" + us).setPositiveButton("OK", null).show();
