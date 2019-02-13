@@ -18,63 +18,64 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ed_ntd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/textView1"
         app:layout_constraintTop_toTopOf="@+id/textView1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/go_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="currency"
         android:text="GO"
         app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="JP"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="US"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_ntd" />
 
     <TextView
         android:id="@+id/jp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="NONE"
+        android:layout_marginTop="8dp"
+        android:text="JP"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/go_button"
+        app:layout_constraintTop_toBottomOf="@+id/go_button" />
 
     <TextView
         android:id="@+id/us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="NONE"
+        android:layout_marginTop="8dp"
+        android:text="US"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/jp"
+        app:layout_constraintTop_toBottomOf="@+id/jp" />
+
+    <TextView
+        android:id="@+id/result_jp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/jp"
+        app:layout_constraintTop_toTopOf="@+id/jp" />
+
+    <TextView
+        android:id="@+id/result_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/us"
+        app:layout_constraintTop_toTopOf="@+id/us" />
+
 </android.support.constraint.ConstraintLayout>
