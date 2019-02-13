@@ -30,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
     public void currency(View view){
         String tmpntd = edNtd.getText().toString();
         if (tmpntd.isEmpty())
-            new AlertDialog.Builder(this).setTitle("Problem").setMessage("Please enter your NTD amount").setPositiveButton("OK", null).show();
+            new AlertDialog.Builder(this)
+                    .setTitle("Problem")
+                    .setMessage("Please enter your NTD amount")
+                    .setPositiveButton("OK", null)
+                    .show();
         else {
             float ntd = Float.parseFloat(tmpntd);
             Log.d("MainActivity", "NTD input : " + ntd);
@@ -40,7 +44,11 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Mainactivity", "JP = " + jp);
             resultUs.setText("" + us);
             resultJp.setText("" + jp);
-            new AlertDialog.Builder(this).setTitle("Currency").setMessage("US：" + us).setPositiveButton("OK", null).show();
+            new AlertDialog.Builder(this)
+                    .setTitle("Currency")
+                    .setMessage("US：" + us)
+                    .setPositiveButton("OK", null)
+                    .show();
         }
     }
 }
