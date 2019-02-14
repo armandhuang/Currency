@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency</string>
+    <string name="text_ntd">台幣</string>
+    <string name="button_go">轉換</string>
+    <string name="text_jp">日幣</string>
+    <string name="text_us">美金</string>
+    <string name="problem">問題</string>
+    <string name="enter_your_bmi">請輸入您的台幣金額</string>
+    <string name="ok">確認</string>
+    <string name="currency">貨幣</string>
+    <string name="us_is">美金：</string>
+</resources>
